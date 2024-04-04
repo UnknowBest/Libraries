@@ -685,6 +685,17 @@ uICorner8.Name = "UICorner"
 uICorner8.CornerRadius = UDim.new(0, 3)
 uICorner8.Parent = rightContainer
 
+
+CreateElement("Button", function()
+	local Button = Create("TextButton", {
+		Text = "",
+		AutoButtonColor = false,
+		BackgroundTransparency = 1,
+		BorderSizePixel = 0
+	})
+	return Button
+end)
+
 function tab:Section(Info)
 Info.Text = Info.Text or "Section"
 Info.Side = Info.Side or "Left"
